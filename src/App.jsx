@@ -3,6 +3,7 @@ import MainNavs from "./components/MainNav/MainNavs";
 import SubNavs from "./components/SubNav/SubNavs";
 import Movies from "./components/Movie/Movies";
 import Studios from "./components/Studio/Studios";
+import SemiContants from "./components/SemiContents/SemiContants";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <SubNavs />
       <Movies />
       <Studios />
+      <SemiContants/>
     </div>
   );
 }
