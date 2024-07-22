@@ -4,6 +4,8 @@ import SubNavs from "./components/SubNav/SubNavs";
 import Movies from "./components/Movie/Movies";
 import Studios from "./components/Studio/Studios";
 import SemiContants from "./components/SemiContents/SemiContants";
+import ProductsCointener from "./components/ProductContainer/ProductsCointener";
+import Footers from "./components/Footer/Footers";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <SubNavs />
       <Movies />
       <Studios />
-      <SemiContants/>
+      <SemiContants />
+      <ProductsCointener />
+      <Footers />
     </div>
   );
 }
