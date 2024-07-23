@@ -7,7 +7,7 @@ function Category(prop) {
   return (
     <div>
       <button
-        className={`px-3 py-1 ${
+        className={`px-3 py-1 md:text-xl md:px-5 md:py-2  ${
           theme ? "bg-zinc-900" : "bg-white"
         } bg-opacity-60 text-nowrap backdrop-blur-sm rounded-full`}
       >

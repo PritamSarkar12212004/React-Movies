@@ -9,7 +9,7 @@ function SemiContants() {
   ];
   return (
     <div className="w-full bg-zinc-600n  mt-7 ">
-      <h1 className="text-xl w-full flex justify-between items-center px-5">
+      <h1 className="text-xl w-full flex justify-between items-center px-5 md:text-2xl">
         Top Movies <FaChevronRight />
       </h1>
       <div className="w-full flex overflow-x-scroll scrollbar-hide gap-3  mt-5 pl-3">

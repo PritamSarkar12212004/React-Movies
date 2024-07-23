@@ -13,7 +13,7 @@ function Studios() {
     "Studio/wd.jpg",
   ];
   return (
-    <div className="w-full h-full flex overflow-x-scroll scrollbar-hide mt-10 gap-3 px-6">
+    <div className="w-full h-full flex overflow-x-scroll scrollbar-hide mt-10 gap-3 md:gap-5 px-6">
       {img.map((img, index) => (
         <Studio key={index} img={img} />
       ))}
