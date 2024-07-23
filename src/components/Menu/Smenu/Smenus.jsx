@@ -26,12 +26,23 @@ function Smenus() {
         "https://i.pinimg.com/564x/58/47/19/584719b3904efc4961d01f04cd9ac623.jpg",
       ],
     },
+    {
+      Title: "Web Series",
+      urls: [
+        "https://i.pinimg.com/736x/b8/69/07/b869075f8960095eeee5c026ece43cce.jpg",
+        "https://i.pinimg.com/736x/d1/1d/fe/d11dfe810f7cf31cb24e0637f39c0f3d.jpg",
+        "https://i.pinimg.com/564x/16/ae/a6/16aea642f61e589871b12004b72be824.jpg",
+        "https://i.pinimg.com/564x/da/ee/3b/daee3ba74ae00a17bd4f86f3c200980b.jpg",
+        "https://i.pinimg.com/736x/09/23/f5/0923f55629e8c5860044bddf5d3cafef.jpg",
+        "https://i.pinimg.com/564x/b1/fd/c0/b1fdc00a74f5ee6e7e8a901f74dff1ed.jpg",
+      ],
+    },
   ];
   return (
     <div
       className={`w-full h-[92.8vh] md:h-[92.8vh]  fixed bottom-0 z-10 ${
         theme ? "bg-black " : "bg-white"
-      } px-5 py-5 flex flex-col gap-5 overflow-y-scroll`}
+      } px-5 py-5 flex flex-col gap-5 overflow-y-scroll `}
     >
       {data.map((item, index) => (
         <Smenu key={index} item={item} data={item} />
