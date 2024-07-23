@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Notification from "./Notification";
+import ContextMaker from "../../context/ContextMaker";
+
 function Notifications() {
+  const { theme } = useContext(ContextMaker);
+
   const data = [
     {
       id: 1,
@@ -43,7 +47,7 @@ function Notifications() {
     },
   ];
   return (
-    <div className="w-full h-[40vh] bg-zinc-900 px-3 py-3 rounded-xl m-3  overflow-y-auto">
+    <div className={`w-full h-[40vh] ${theme? "bg-zinc-900" :"bg-gray-100"} px-3 py-3 rounded-xl m-3  overflow-y-auto`}>
       {data.map((item) => {
         return <Notification key={item.id} item={item} />;
       })}
