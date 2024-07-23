@@ -8,8 +8,9 @@ import ProductsCointener from "./components/ProductContainer/ProductsCointener";
 import Footers from "./components/Footer/Footers";
 import ContextMaker from "./context/ContextMaker";
 import Smenus from "./components/Menu/Smenu/Smenus";
+import Notifications from "./components/Notification/Notifications";
 function App() {
-  const { theme, smenu } = useContext(ContextMaker);
+  const { theme, smenu, noti, setnoti } = useContext(ContextMaker);
 
   return (
     <div
@@ -20,6 +21,9 @@ function App() {
       <MainNavs />
       <div className={`${smenu ? "block" : " hidden "}`}>
         <SubNavs />
+        <div className={`${noti ? "flex" : "hidden "}`}>
+          <Notifications />
+        </div>
         <Movies />
         <Studios />
         <SemiContants />

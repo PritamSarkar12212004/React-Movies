@@ -6,9 +6,12 @@ const ContextProvider = ({ children }) => {
   const [theme, setTheme] = useState(true);
   //for sm navbar
   const [smenu, setsmenu] = useState(true);
+  const [noti, setnoti] = useState(false);
 
   return (
-    <ContextMaker.Provider value={{ theme, setTheme,smenu, setsmenu}}>
+    <ContextMaker.Provider
+      value={{ theme, setTheme, smenu, setsmenu, noti, setnoti }}
+    >
       {children}
     </ContextMaker.Provider>
   );

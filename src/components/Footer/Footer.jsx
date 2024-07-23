@@ -9,16 +9,18 @@ import { RxCross2 } from "react-icons/rx";
 import ContextMaker from "../../context/ContextMaker";
 
 function Footer() {
-  const { theme, smenu, setsmenu } = useContext(ContextMaker);
+  const { theme, smenu, setsmenu, noti, setnoti } = useContext(ContextMaker);
   return (
     <div
       className={`w-full h-14 md:h-12 ${
         theme ? "bg-black" : "bg-white"
       } text-3xl flex justify-between bg-opacity-60 backdrop-blur-sm  px-4 items-center rounded-t-xl`}
     >
-      <IoHome />
-      <MdSupportAgent />
-      <span className="text-4xl md:text-5xl ">
+      <div className={`${smenu ? "block" : "  opacity-20 "} flex gap-10`}>
+        <IoHome />
+        <MdSupportAgent />
+      </div>
+      <span className="text-4xl md:text-5xl  ">
         <button
           onClick={() => {
             setsmenu(!smenu);
@@ -27,8 +29,18 @@ function Footer() {
           {smenu ? <RiMenu5Fill /> : <RxCross2 />}
         </button>
       </span>
-      <CiSquareQuestion />
-      <IoMdNotifications />
+      <div className={`${smenu ? "block" : "  opacity-20  "} flex gap-10`}>
+        <button>
+          <CiSquareQuestion />
+        </button>
+        <button
+          onClick={() => {
+            setnoti(!noti);
+          }}
+        >
+          <IoMdNotifications />
+        </button>
+      </div>
     </div>
   );
 }
