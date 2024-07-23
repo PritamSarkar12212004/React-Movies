@@ -5,7 +5,6 @@ import { CiSquareQuestion } from "react-icons/ci";
 import { MdSupportAgent } from "react-icons/md";
 import { RiMenu5Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
-
 import ContextMaker from "../../context/ContextMaker";
 
 function Footer() {

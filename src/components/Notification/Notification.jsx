@@ -1,11 +1,13 @@
-import React from "react";
-
+import React, { useContext } from "react";
 function Notification(prop) {
   const { item } = prop;
-  const { id, title, description, date, time } = item;
+  const { id, title, description, date, color } = item;
   return (
     <div className="w-full flex border-b-[2px] py-2 border-gray-700  relative  ">
-      <div className="w-12 h-12 rounded-full overflow-hidden bg-blue-600 flex items-center justify-center mr-3">
+      <div
+        className={`w-12 h-12 rounded-full overflow-hidden flex items-center justify-center mr-3`}
+        style={{ backgroundColor: color }}
+      >
         <h1 className="text-2xl">{id}</h1>
       </div>
       <div>
