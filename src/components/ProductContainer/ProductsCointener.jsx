@@ -102,7 +102,7 @@ const data3 = {
 };
 function ProductsCointener() {
   return (
-    <div>
+    <div className=" mb-14">
       <ProductHold datas={data2} />
       <ProductHold datas={data} />
       <ProductHold datas={data3} />
