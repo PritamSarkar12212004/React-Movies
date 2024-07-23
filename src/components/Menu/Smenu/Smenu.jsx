@@ -13,7 +13,7 @@ function Smenu(prop) {
             key={index}
             src={url}
             alt={`Image ${index}`}
-            className="w-20 h-20 md:w-32 md:h-32 object-cover rounded-md"
+            className="w-22 h-24 md:w-32 md:h-32 object-cover rounded-md"
           />
         ))}
       </div>
