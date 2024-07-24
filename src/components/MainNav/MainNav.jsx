@@ -6,10 +6,9 @@ import { deepPurple } from "@mui/material/colors";
 import ContextMaker from "../../context/ContextMaker";
 
 function MainNav() {
-  const { theme, setTheme } = useContext(ContextMaker);
+  const { theme, setIsDarkTheme } = useContext(ContextMaker);
   const setWebTheme = () => {
-    setTheme(!theme);
-    localStorage.setItem("theme", theme);
+    setIsDarkTheme((prevTheme) => !prevTheme);
   };
 
   return (
