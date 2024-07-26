@@ -102,7 +102,7 @@ const data3 = {
 };
 function ProductsCointener() {
   return (
-    <div className=" mb-14">
+    <div className=" mb-14 scrollbar-hide">
       <ProductHold datas={data2} />
       <ProductHold datas={data} />
       <ProductHold datas={data3} />

@@ -1,5 +1,6 @@
 import React from "react";
 import Category from "../Category/Category";
+
 function SubNav() {
   const categories = [
     "All",
@@ -25,7 +26,7 @@ function SubNav() {
   ];
 
   return (
-    <div className="w-full flex overflow-x-hide gap-3 overflow-y-hidden">
+    <div className="w-full flex overflow-x-auto scrollbar-hide gap-3 overflow-y-hidden">
       {categories.map((category, index) => (
         <Category key={index} category={category} />
       ))}

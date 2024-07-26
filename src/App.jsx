@@ -16,7 +16,7 @@ function App() {
     <div
       className={`w-full h-full ${theme ? "bg-black" : "bg-white"} ${
         theme ? "text-white" : "text-black"
-      } `}
+      } scrollbar-hide `}
     >
       <MainNavs />
       <div className={`${smenu ? "block" : " hidden "}`}>
